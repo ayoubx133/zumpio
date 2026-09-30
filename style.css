@@ -31,3 +31,25 @@ footer ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}footer a{colo
 .prose{max-width:760px;margin:0 auto;padding:30px 20px 0}.prose h1{font-size:2.3rem;margin:10px 0 4px;letter-spacing:-.02em}.prose h2{font-size:1.25rem;margin:30px 0 6px}
 .prose .meta{color:var(--soft);margin:0 0 22px}.prose li{margin:4px 0}
 @media (max-width:600px){.hero-in{padding:48px 24px;border-radius:24px}.nav ul{gap:14px;font-size:.95rem}section{padding-top:48px}}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 22px}
+.chip{font:inherit;font-weight:700;border:1px solid var(--line);background:var(--card);color:var(--soft);padding:8px 18px;border-radius:999px;cursor:pointer}
+.chip.on{background:var(--brand);border-color:var(--brand);color:#fff}
+.games{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:16px}
+.game{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:14px;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;gap:4px;transition:transform .15s,box-shadow .15s}
+.game:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(40,30,120,.12)}
+.game img{width:100%;height:auto;aspect-ratio:1;border-radius:22%;display:block;margin-bottom:6px}
+.game b{font-size:1rem;line-height:1.25}.game span{color:var(--soft);font-size:.85rem;font-weight:600}
+.gp{max-width:960px;margin:0 auto;padding:20px 20px 0}
+.back{font-weight:700;text-decoration:none}
+.gp-head{display:flex;gap:24px;align-items:center;margin:20px 0 10px}
+.gp-ic{width:140px;height:140px;border-radius:22%;flex:none;box-shadow:0 10px 24px rgba(40,30,120,.15)}
+.gp h1{font-size:clamp(1.8rem,4.5vw,2.6rem);margin:0 0 8px;line-height:1.1;letter-spacing:-.02em}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}.tags span{background:#efeaff;color:var(--brand);font-weight:700;font-size:.85rem;padding:4px 12px;border-radius:999px}
+.soon{margin:0;color:var(--soft);font-weight:600}
+.gp-short{font-size:1.2rem;font-weight:700;margin:18px 0}
+.shots{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:0 0 10px}
+.shots img{width:100%;height:auto;border-radius:18px;border:1px solid var(--line);display:block}
+.gp h2{font-size:1.4rem;margin:26px 0 6px}
+.feats{padding-left:20px}.feats li{margin:4px 0}.note{color:var(--soft)}
+.pn{display:flex;justify-content:space-between;gap:12px;margin-top:30px;font-weight:700}.pn a{text-decoration:none}
+@media (max-width:700px){.shots{grid-template-columns:repeat(2,1fr)}.gp-head{gap:16px}.gp-ic{width:96px;height:96px}.games{grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px}}
